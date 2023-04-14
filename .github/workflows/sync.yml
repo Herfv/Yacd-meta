@@ -1,0 +1,19 @@
+name: Sync Fork
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '5 23 */2 * *'
+
+jobs:
+  sync:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: tgymnich/fork-sync@v1.2.1
+        with:
+          github_token: ${{ secrets.DRUHEWCQC_TOKEN }}
+          owner: MetaCubeX
+          base: master
+          head: master
