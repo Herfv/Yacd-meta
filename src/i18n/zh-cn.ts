@@ -67,4 +67,10 @@ export const data = {
   close_all_confirm: '确定关闭所有连接？',
   close_all_confirm_yes: '确定',
   close_all_confirm_no: '取消',
+  manage_column: '管理列',
+  reset_column: '重置列',
+  device_name: '设备名',
+  delete: '删除',
+  add_tag: '添加标签',
+  client_tag: '客户端标签',
 };
